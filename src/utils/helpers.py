@@ -27,7 +27,7 @@ def extract_dataset(path):
 def download_and_extract_dataset(dataset_type, path):
     os.makedirs(path, exist_ok=True)
     
-    if dataset_type == "kitti":
+    if dataset_type == "KITTI":
         urls = [
             "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_odometry_gray.zip",
             "https://s3.eu-central-1.amazonaws.com/avg-kitti/data_odometry_velodyne.zip",
@@ -41,4 +41,4 @@ def download_and_extract_dataset(dataset_type, path):
         extract_dataset(path)
 
 if __name__ == "__main__":
-    download_and_extract_dataset("kitti", DATASETS_PATH)
+    download_and_extract_dataset("KITTI", DATASETS_PATH)
