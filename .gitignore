@@ -1,2 +1,5 @@
 venv/
 datasets/
+zips/
+__pycache__/
+outputs/
